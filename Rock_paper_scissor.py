@@ -4,13 +4,21 @@ get userinput -> between (1,2,3)
 make random number between(1,2,3) -> computer input
 start making comparision to find out who lost,won,ties
 """
-import random as r
+try:
+    import random as r
+except ImportError:
+    import os
+    os.system('-U pip install random')
+    import random as r
+else: 
+    pass
 
 def user_input():
     print("Welcome to Rock Paper scissor")
     try:
         print("1) Rock\n2) Paper\n3) Scissor")
         number = input(": ")
+        assert number in (1,2,3)
     except ValueError: 
         print("Please enter a number !!")
         return user_input()
