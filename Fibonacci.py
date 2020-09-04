@@ -22,7 +22,7 @@ def get_number():
         print("Please enter a whole number !!")
         return get_number()
     
-    else: 
+    else:
         return Fibonacci(start, end, step)
 
 get_number()
