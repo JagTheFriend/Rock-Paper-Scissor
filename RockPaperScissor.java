@@ -2,7 +2,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 /*
-Plane: 
+Plan: 
 Get user input and a device input
 find the winner by comparisons
 */
